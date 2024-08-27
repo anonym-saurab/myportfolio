@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.sliding-text h1, .sliding-text h2, .sliding-text h3 {
+    margin: 0;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.sliding-text h2 {
+    animation-delay: 1s;
+}
+
+.sliding-text h3 {
+    animation-delay: 2s;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-section, .projects-section {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+
+h1 {
+    font-weight: bold;  /* Makes the text bold */
+    font-size: 3em;     /* Adjust the size as per your preference */
+    color: #333;        /* Adjust the color if needed */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Hack', monospace;  /* Uses the 'Hack' font */
+    font-weight: 600;                /* Semi-bold */
+    font-size: 1.5em;                /* Adjust the size as per your preference */
+    color: #555;                     /* Adjust the color if needed */
+    text-align: center;              /* Center align the text */
+    margin-bottom: 15px;
+}
+
+
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.projects-section .project {
+    margin: 20px 0;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #0072ff;
+}
+
+.project p {
+    font-size: 1em;
+    color: #666;
+}
